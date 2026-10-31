@@ -1,0 +1,114 @@
+﻿HTML
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Phone Fix</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eef3f8;
+  text-align: center;
+}
+
+header {
+  background: #10243e;
+  color: white;
+  padding: 25px;
+}
+
+header h1 {
+  color: #25c5e8;
+}
+
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px #cccccc;
+}
+
+h2 {
+  color: #10243e;
+}
+
+.price {
+  color: #008caa;
+  font-weight: bold;
+}
+
+button {
+  background: #00a9c7;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+footer {
+  background: #10243e;
+  color: white;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📱 Phone Fix</h1>
+<p>خدمات إصلاح الهواتف</p>
+</header>
+
+<div class="card">
+<h2>مرحبا بكم!</h2>
+<p>نقدم لكم خدمات إصلاح الهواتف بجودة عالية.</p>
+</div>
+
+<div class="card">
+<h2>خدماتنا</h2>
+
+<p>🔧 إصلاح الشاشات</p>
+<p class="price">ابتداءً من 100 درهم</p>
+
+<p>🔋 تغيير البطارية</p>
+<p class="price">ابتداءً من 80 درهم</p>
+
+<p>🔌 إصلاح مدخل الشحن</p>
+<p class="price">ابتداءً من 50 درهم</p>
+</div>
+
+<div class="card">
+<h2>تواصل معنا</h2>
+<p>هل تحتاج إلى إصلاح هاتفك؟</p>
+
+<button onclick="contact()">
+اتصل بنا
+</button>
+
+<p id="message"></p>
+</div>
+
+<footer>
+<p>Phone Fix © 2026</p>
+</footer>
+
+<script>
+function contact() {
+  document.getElementById("message").innerHTML =
+  "شكراً لزيارتكم! مرحباً بكم.";
+}
+</script>
+
+</body>
+</html>
+
+
